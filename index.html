@@ -1,101 +1,191 @@
-<html>
+<html lang="en">
  <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Data Divisi
+   Sistem Informasi Manejement Karyawan
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
  </head>
  <body class="bg-gray-100">
-  <div class="flex">
+  <div class="flex h-screen">
    <!-- Sidebar -->
-   <div class="w-64 bg-white h-screen shadow-md">
-    <div class="p-4 flex items-center">
-     <img alt="University Logo" class="w-10 h-10 mr-2" height="60" src="logo.jpeg" width="60"/>
+   <div class="bg-blue-800 text-white w-64 p-4">
+    <div class="flex items-center mb-6">
+     <img alt="University Logo" class="w-10 h-10 mr-2" height="50" src="logo.jpeg" width="50"/>
      <div>
       <h1 class="text-lg font-bold">
-       Universitas BungKarno
+        Universitas Bung Karno
       </h1>
+      <p class="text-sm">
+       Administrator
+      </p>
      </div>
     </div>
-    <div class="p-4">
-     <p class="text-gray-600">
+    <div class="mb-4">
+     <p class="text-sm">
       Welcome, Siti Shapira Nurulita
-      
-     <p class="text-gray-600">
-      Administrator
      </p>
     </div>
-    <nav class="mt-4">
+    <nav>
      <ul>
       <li class="mb-2">
-       <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+       <a class="flex items-center p-2 bg-blue-700 rounded" href="#">
         <i class="fas fa-tachometer-alt mr-2">
+        </i>
+        Dashboard
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="#">
+        <i class="fas fa-users mr-2">
+        </i>
+        Karyawan
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="Data Jabatan/index.html">
+        <i class="fas fa-briefcase mr-2">
+        </i>
+        Jabatan
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="Data Divisi/index.html">
+        <i class="fas fa-building mr-2">
         </i>
         Divisi
        </a>
       </li>
       <li class="mb-2">
-       <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
-    
+       <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="Data Hasil Karyawan/index.html">
+        <i class="fas fa-calendar-check mr-2">
+        </i>
+        Absensi
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="Data Izin Karyawan/index.htm">
+        <i class="fas fa-envelope-open-text mr-2">
+        </i>
+        Izin
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="flex items-center p-2 hover:bg-blue-700 rounded" href="Data Lembur Karyawan/index.html">
+        <i class="fas fa-clock mr-2">
+        </i>
+        Lembur
+       </a>
+      </li>
      </ul>
     </nav>
    </div>
    <!-- Main Content -->
    <div class="flex-1 p-6">
-    <div class="bg-white p-4 rounded shadow-md">
-     <div class="flex justify-between items-center mb-4">
-      <h2 class="text-xl font-bold">
-       Data Divisi
-      </h2>
-      <button class="bg-blue-500 text-white px-4 py-2 rounded">
-       <i class="fas fa-plus mr-2">
-       </i>
-       Tambah Divisi
-      </button>
+    <div class="bg-white p-6 rounded shadow">
+     <h2 class="text-2xl font-bold mb-4">
+      Sistem Informasi Manajemen Karyawan
+     </h2>
+     <p class="text-lg mb-6">
+      Admin Dashboard
+     </p>
+     <div class="grid grid-cols-4 gap-4 mb-6">
+      <div class="bg-blue-500 text-white p-4 rounded shadow">
+       <div class="flex items-center">
+        <i class="fas fa-database text-3xl mr-4">
+        </i>
+        <div>
+         <p>
+          Data Pegawai
+         </p>
+         <p class="text-2xl font-bold">
+          13
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="bg-green-500 text-white p-4 rounded shadow">
+       <div class="flex items-center">
+        <i class="fas fa-calendar-alt text-3xl mr-4">
+        </i>
+        <div>
+         <p>
+          Absensi Hari Ini
+         </p>
+         <p class="text-2xl font-bold">
+          0
+         </p>
+         <p>
+          16 May 2023
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="bg-blue-300 text-white p-4 rounded shadow">
+       <div class="flex items-center">
+        <i class="fas fa-envelope-open-text text-3xl mr-4">
+        </i>
+        <div>
+         <p>
+          Izin Menunggu Konfirmasi
+         </p>
+         <p class="text-2xl font-bold">
+          2
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="bg-purple-500 text-white p-4 rounded shadow">
+       <div class="flex items-center">
+        <i class="fas fa-clock text-3xl mr-4">
+        </i>
+        <div>
+         <p>
+          Lembur Menunggu Konfirmasi
+         </p>
+         <p class="text-2xl font-bold">
+          1
+         </p>
+        </div>
+       </div>
+      </div>
      </div>
+    </div>
+    <div class="bg-white p-6 rounded shadow mt-6">
+     <h2 class="text-2xl font-bold mb-4">
+      Dashboard
+     </h2>
      <div class="flex justify-between items-center mb-4">
-      <div>
-       <label class="mr-2" for="entries">
-        Show
-       </label>
-       <select class="border rounded p-1" id="entries">
-        <option>
-         10
-        </option>
-        <option>
-         25
-        </option>
-        <option>
-         50
-        </option>
-        <option>
-         100
-        </option>
-       </select>
-       <span class="ml-2">
-        entries
-       </span>
-      </div>
-      <div>
-       <label class="mr-2" for="search">
-        Search:
-       </label>
-       <input class="border rounded p-1" id="search" type="text"/>
-      </div>
+      <h3 class="text-lg font-bold">
+       Data Karyawan
+      </h3>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded shadow">
+       + Tambah Karyawan
+      </button>
      </div>
      <table class="min-w-full bg-white">
       <thead>
        <tr>
         <th class="py-2 px-4 border-b">
-         No.
+         No
         </th>
         <th class="py-2 px-4 border-b">
-         Kode Divisi
+         Kode
         </th>
         <th class="py-2 px-4 border-b">
-         Nama Divisi
+         Nama
+        </th>
+        <th class="py-2 px-4 border-b">
+         Email
+        </th>
+        <th class="py-2 px-4 border-b">
+         Alamat
+        </th>
+        <th class="py-2 px-4 border-b">
+         Jabatan
         </th>
         <th class="py-2 px-4 border-b">
          Aksi
@@ -108,10 +198,19 @@
          1
         </td>
         <td class="py-2 px-4 border-b">
-         DIV001
+         K001
         </td>
         <td class="py-2 px-4 border-b">
-         Umum
+         Yanra 
+        </td>
+        <td class="py-2 px-4 border-b">
+         yanra@gmail.com
+        </td>
+        <td class="py-2 px-4 border-b">
+          Jl. Kamboja No. 9, Jakarta Pusat
+        </td>
+        <td class="py-2 px-4 border-b">
+         Manager
         </td>
         <td class="py-2 px-4 border-b">
          <a class="text-blue-500 mr-2" href="#">
@@ -129,10 +228,19 @@
          2
         </td>
         <td class="py-2 px-4 border-b">
-         DIV002
+         K002
         </td>
         <td class="py-2 px-4 border-b">
-         BAUK
+          Erwin Saputra
+        </td>
+        <td class="py-2 px-4 border-b">
+          erwin.saputra@example.com
+        </td>
+        <td class="py-2 px-4 border-b">
+          Jl. Diponegoro No.12
+        </td>
+        <td class="py-2 px-4 border-b">
+         Kepala Bagian
         </td>
         <td class="py-2 px-4 border-b">
          <a class="text-blue-500 mr-2" href="#">
@@ -150,10 +258,19 @@
          3
         </td>
         <td class="py-2 px-4 border-b">
-         DIV003
+         K003
         </td>
         <td class="py-2 px-4 border-b">
-         BAA
+          Johan Sudirman
+        </td>
+        <td class="py-2 px-4 border-b">
+          johan.sudirman@example.com
+        </td>
+        <td class="py-2 px-4 border-b">
+          Jl. Jambu No.5 Jakarta
+        </td>
+        <td class="py-2 px-4 border-b">
+         Staff
         </td>
         <td class="py-2 px-4 border-b">
          <a class="text-blue-500 mr-2" href="#">
@@ -171,52 +288,19 @@
          4
         </td>
         <td class="py-2 px-4 border-b">
-         DIV004
+         K004
         </td>
         <td class="py-2 px-4 border-b">
-         IT
+          Muhammad Rizki
         </td>
         <td class="py-2 px-4 border-b">
-         <a class="text-blue-500 mr-2" href="#">
-          <i class="fas fa-edit">
-          </i>
-         </a>
-         <a class="text-red-500" href="#">
-          <i class="fas fa-trash">
-          </i>
-         </a>
-        </td>
-       </tr>
-       <tr>
-        <td class="py-2 px-4 border-b">
-         5
+          muhammad.rizki@example.com
         </td>
         <td class="py-2 px-4 border-b">
-         DIV005
+          Jl. Melati No.9 Tangerang
         </td>
         <td class="py-2 px-4 border-b">
-         Cleaning Service
-        </td>
-        <td class="py-2 px-4 border-b">
-         <a class="text-blue-500 mr-2" href="#">
-          <i class="fas fa-edit">
-          </i>
-         </a>
-         <a class="text-red-500" href="#">
-          <i class="fas fa-trash">
-          </i>
-         </a>
-        </td>
-       </tr>
-       <tr>
-        <td class="py-2 px-4 border-b">
-         6
-        </td>
-        <td class="py-2 px-4 border-b">
-         DIV006
-        </td>
-        <td class="py-2 px-4 border-b">
-         OB
+         Staff
         </td>
         <td class="py-2 px-4 border-b">
          <a class="text-blue-500 mr-2" href="#">
